@@ -1,0 +1,315 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.littleshoot</groupId>
+    <artifactId>parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>LittleShoot Parent</name>
+    <url>http://www.littleshoot.org</url>
+
+    <organization>
+        <name>LittleShoot</name>
+        <url>http://www.littleshoot.org</url>
+    </organization>
+
+    <properties>
+         <slf4j.version>1.6.1</slf4j.version>
+         <ls.version>1.0-SNAPSHOT</ls.version>
+    </properties>
+
+    <licenses>
+        <license>
+            <name>GNU General Public License Version 2</name>
+            <url>http://www.gnu.org/licenses/gpl.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>6</version>
+    </parent>
+
+    <modules>
+
+        <module>littleshoot-amazon-ec2</module>
+        <module>littleshoot-amazon-s3</module>
+        <module>littleshoot-amazon-stack</module>
+
+        <module>littleshoot-http-client</module>
+        <module>littleshoot-ice</module>
+        <module>littleshoot-jlibtorrent</module>
+        <module>littleshoot-mina</module>
+        <module>littleshoot-mina-util</module>
+
+        <module>littleshoot-offer-answer</module>
+
+        <module>littleshoot-p2p</module>
+        <module>littleshoot-p2p-sockets</module>
+        <module>littleshoot-portmapping</module>
+        <module>littleshoot-sdp</module>
+        <module>littleshoot-sip-bootstrap</module>
+        <module>littleshoot-sip-client</module>
+        <module>littleshoot-sip-http-client</module>
+        <module>littleshoot-sip-server</module>
+        <module>littleshoot-sip-stack</module>
+        <module>littleshoot-smack-xmpp</module>
+
+        <module>littleshoot-stun-client</module>
+        <module>littleshoot-stun-server</module>
+        <module>littleshoot-stun-stack</module>
+        
+        <module>littleshoot-tcp-framing</module>
+        
+        <module>littleshoot-turn-client</module>
+        <module>littleshoot-turn-http-server</module>
+        <module>littleshoot-turn-server</module>
+        <module>littleshoot-udt</module>
+        <module>littleshoot-util</module>
+        <module>littleshoot-xmpp</module>
+    </modules>
+
+    <scm>
+        <connection>scm:git:https://adamfisk@github.com/adamfisk/littleshoot-p2p-sockets.git</connection>
+        <developerConnection>scm:git:https://adamfisk@github.com/adamfisk/littleshoot-p2p-sockets.git</developerConnection>
+        <url>https://adamfisk@github.com/adamfisk/littleshoot-p2p-sockets.git</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>adamfisk</id>
+            <name>Adam Fisk</name>
+            <email>a@littleshoot.org</email>
+            <organization>LittleShoot</organization>
+            <organizationUrl>http://www.littleshoot.org/</organizationUrl>
+            <roles><role>Developer</role></roles>
+            <timezone>-5</timezone>
+        </developer>
+    </developers>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>smack-xmpp</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>amazon-ec2</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>amazon-s3</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>amazon-stack</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>http-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>jlibtorrent</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>turn-http-server</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>ice</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>offer-answer</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.lastbamboo</groupId>
+                <artifactId>lastbamboo-common-online</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>p2p-sockets</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>portmapping</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>sdp</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>sip-bootstrap</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>sip-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>sip-http-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>sip-server</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>sip-stack</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>stun-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>stun-server</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>stun-stack</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>tcp-framing</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>turn-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>turn-server</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>udt</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>xmpp</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>mina-util</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>util</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>sonatype-nexus-releases</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/releases</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+</project>
