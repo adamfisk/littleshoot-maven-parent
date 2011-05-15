@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-projects="amazon-ec2
+projects="xmpp
+util
+amazon-ec2
 amazon-s3
 amazon-stack
 http-client 
@@ -30,5 +32,5 @@ udt"
 
 for project in $projects
 do
-  git clone git@github.com:adamfisk/littleshoot-$project.git
+  test -d littleshoot-$project || git clone git@github.com:adamfisk/littleshoot-$project.git
 done 
