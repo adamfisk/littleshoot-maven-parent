@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 projects="xmpp
-uuid
+commons-id
 util
 amazon-ec2
 amazon-s3

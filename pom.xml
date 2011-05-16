@@ -272,12 +272,6 @@
 
             <dependency>
                 <groupId>org.littleshoot</groupId>
-                <artifactId>littleshoot-uuid</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.littleshoot</groupId>
                 <artifactId>xmpp</artifactId>
                 <version>${project.version}</version>
             </dependency>
