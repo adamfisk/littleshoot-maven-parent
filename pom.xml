@@ -37,6 +37,7 @@
         <module>littleshoot-amazon-ec2</module>
         <module>littleshoot-amazon-s3</module>
         <module>littleshoot-amazon-stack</module>
+        <module>littleshoot-commons-id</module>
 
         <module>littleshoot-http-client</module>
         <module>littleshoot-ice</module>
@@ -121,12 +122,6 @@
         <dependencies>
             <dependency>
                 <groupId>org.littleshoot</groupId>
-                <artifactId>smack-xmpp</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.littleshoot</groupId>
                 <artifactId>amazon-ec2</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -163,7 +158,7 @@
 
             <dependency>
                 <groupId>org.littleshoot</groupId>
-                <artifactId>ice</artifactId>
+                <artifactId>littleshoot-ice</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -229,6 +224,12 @@
 
             <dependency>
                 <groupId>org.littleshoot</groupId>
+                <artifactId>smack-xmpp</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
                 <artifactId>stun-client</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -266,6 +267,12 @@
             <dependency>
                 <groupId>org.littleshoot</groupId>
                 <artifactId>udt</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>littleshoot-uuid</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
