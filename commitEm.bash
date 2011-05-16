@@ -6,7 +6,6 @@ function die() {
 }
 
 DIRS=`ls`
-#echo "Searching jars $JARS"
 for x in $DIRS
 do
   test -f $x && continue
