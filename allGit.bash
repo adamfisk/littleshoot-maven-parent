@@ -12,6 +12,6 @@ for x in $DIRS
 do
   test -f $x && continue
   cd $x
-  git st
+  git status
   cd -
 done
