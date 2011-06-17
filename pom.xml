@@ -147,6 +147,12 @@
 
             <dependency>
                 <groupId>org.littleshoot</groupId>
+                <artifactId>littleshoot-commons-id</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
                 <artifactId>http-client</artifactId>
                 <version>${project.version}</version>
             </dependency>
