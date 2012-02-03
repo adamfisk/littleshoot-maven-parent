@@ -29,7 +29,7 @@
     <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
-        <version>6</version>
+        <version>7</version>
     </parent>
 
     <modules>
@@ -149,6 +149,12 @@
                 <groupId>org.littleshoot</groupId>
                 <artifactId>amazon-stack</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.littleshoot</groupId>
+                <artifactId>dnssec4j</artifactId>
+                <version>0.1-SNAPSHOT</version>
             </dependency>
 
             <dependency>
