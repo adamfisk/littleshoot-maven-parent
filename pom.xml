@@ -13,7 +13,7 @@
     </organization>
 
     <properties>
-         <slf4j.version>1.6.1</slf4j.version>
+         <slf4j.version>1.7.2</slf4j.version>
          <ls.version>1.0-SNAPSHOT</ls.version>
          <mina.port.version>1.1-SNAPSHOT</mina.port.version>
     </properties>
@@ -74,9 +74,9 @@
     </modules>
 
     <scm>
-        <connection>scm:git:https://adamfisk@github.com/adamfisk/littleshoot-p2p-sockets.git</connection>
-        <developerConnection>scm:git:https://adamfisk@github.com/adamfisk/littleshoot-p2p-sockets.git</developerConnection>
-        <url>https://adamfisk@github.com/adamfisk/littleshoot-p2p-sockets.git</url>
+        <connection>scm:git:https://adamfisk@github.com/adamfisk/littleshoot-maven-parent.git</connection>
+        <developerConnection>scm:git:https://adamfisk@github.com/adamfisk/littleshoot-maven-parent.git</developerConnection>
+        <url>https://adamfisk@github.com/adamfisk/littleshoot-maven-parent.git</url>
     </scm>
 
     <developers>
@@ -119,19 +119,19 @@
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>11.0.1</version>
+                <version>14.0-rc1</version>
             </dependency>
 
             <dependency>
-                <groupId>commons-lang</groupId>
-                <artifactId>commons-lang</artifactId>
-                <version>2.6</version>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.1</version>
             </dependency>
 
             <dependency>
                 <groupId>com.googlecode.json-simple</groupId>
                 <artifactId>json-simple</artifactId>
-                <version>1.1</version>
+                <version>1.1.1</version>
             </dependency>
 
             <dependency>
@@ -305,7 +305,7 @@
             <dependency>
                 <groupId>org.littleshoot</groupId>
                 <artifactId>mina-port</artifactId>
-                <version>1.0</version>
+                <version>1.2</version>
             </dependency>
 
             <dependency>
@@ -323,14 +323,14 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.8.2</version>
+            <version>4.11</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
-            <version>1.2.16</version>
+            <version>1.2.17</version>
         </dependency>
 
         <dependency>
@@ -346,6 +346,10 @@
         </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <prerequisites>
+       <maven>2.2.1</maven>
+    </prerequisites>
 
     <build>
         <plugins>
