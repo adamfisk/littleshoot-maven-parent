@@ -22,6 +22,7 @@ sip-http-client
 sip-server 
 sip-stack 
 smack-xmpp 
+smack-xmpp-3-2-2 
 stun-client 
 stun-server 
 stun-stack 
