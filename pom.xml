@@ -3,7 +3,7 @@
     <groupId>org.littleshoot</groupId>
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>LittleShoot Parent</name>
     <url>http://www.littleshoot.org</url>
 
@@ -372,6 +372,7 @@
                     <target>1.6</target>
                 </configuration>
             </plugin>
+<!--
             <plugin>
                 <artifactId>maven-source-plugin</artifactId>
                 <version>2.2.1</version>
@@ -396,7 +397,6 @@
             </plugin>
 
       <plugin>
-        <!-- explicitly define maven-deploy-plugin after other to force exec order -->
         <artifactId>maven-deploy-plugin</artifactId>
         <version>2.7</version>
         <executions>
@@ -408,7 +408,6 @@
         </executions>
       </plugin>
 
-<!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
