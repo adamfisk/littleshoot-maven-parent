@@ -14,7 +14,7 @@
 
     <properties>
          <slf4j.version>1.7.2</slf4j.version>
-         <ls.version>1.0.2</ls.version>
+         <ls.version>1.0.3</ls.version>
     </properties>
 
     <licenses>
@@ -306,7 +306,7 @@
             <dependency>
                 <groupId>org.littleshoot</groupId>
                 <artifactId>mina-port</artifactId>
-                <version>1.2</version>
+                <version>1.3</version>
             </dependency>
 
             <dependency>
