@@ -31,6 +31,7 @@
         <version>7</version>
     </parent>
 
+<!--
     <modules>
 
         <module>littleshoot-amazon-ec2</module>
@@ -71,6 +72,7 @@
         <module>littleshoot-util</module>
         <module>littleshoot-xmpp</module>
     </modules>
+-->
 
     <scm>
         <connection>scm:git:https://adamfisk@github.com/adamfisk/littleshoot-maven-parent.git</connection>
