@@ -14,7 +14,7 @@
 
     <properties>
          <slf4j.version>1.7.2</slf4j.version>
-         <ls.version>1.0.0</ls.version>
+         <ls.version>1.0.2</ls.version>
     </properties>
 
     <licenses>
