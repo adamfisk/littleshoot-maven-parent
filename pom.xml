@@ -3,7 +3,7 @@
     <groupId>org.littleshoot</groupId>
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.2</version>
+    <version>1.0.3-SNAPSHOT</version>
     <name>LittleShoot Parent</name>
     <url>http://www.littleshoot.org</url>
 
