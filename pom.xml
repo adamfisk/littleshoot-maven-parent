@@ -3,7 +3,7 @@
     <groupId>org.littleshoot</groupId>
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>LittleShoot Parent</name>
     <url>http://www.littleshoot.org</url>
 
@@ -14,7 +14,7 @@
 
     <properties>
          <slf4j.version>1.7.2</slf4j.version>
-         <ls.version>1.0-SNAPSHOT</ls.version>
+         <ls.version>1.0.0-SNAPSHOT</ls.version>
          <mina.port.version>1.1-SNAPSHOT</mina.port.version>
     </properties>
 
@@ -155,7 +155,7 @@
             <dependency>
                 <groupId>org.littleshoot</groupId>
                 <artifactId>dnssec4j</artifactId>
-                <version>0.1-SNAPSHOT</version>
+                <version>0.2-SNAPSHOT</version>
             </dependency>
 
             <dependency>
