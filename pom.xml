@@ -306,7 +306,7 @@
             <dependency>
                 <groupId>org.littleshoot</groupId>
                 <artifactId>mina-port</artifactId>
-                <version>1.3</version>
+                <version>1.4</version>
             </dependency>
 
             <dependency>
