@@ -135,22 +135,23 @@
                 <version>1.1.1</version>
             </dependency>
 
+<!--
             <dependency>
                 <groupId>org.littleshoot</groupId>
                 <artifactId>amazon-ec2</artifactId>
-                <version>${project.version}</version>
+                <version>${ls.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.littleshoot</groupId>
                 <artifactId>amazon-s3</artifactId>
-                <version>${project.version}</version>
+                <version>${ls.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.littleshoot</groupId>
                 <artifactId>amazon-stack</artifactId>
-                <version>${project.version}</version>
+                <version>${ls.version}</version>
             </dependency>
 
             <dependency>
@@ -320,6 +321,7 @@
                 <artifactId>util</artifactId>
                 <version>${project.version}</version>
             </dependency>
+-->
 
         <dependency>
             <groupId>junit</groupId>
