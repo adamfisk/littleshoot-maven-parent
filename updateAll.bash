@@ -12,6 +12,6 @@ do
   echo $x | grep target && continue 
   echo $x | grep ".git" && continue 
   cd $x
-  git pull origin master
+  git pull 
   cd -
 done
