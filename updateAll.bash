@@ -11,6 +11,7 @@ do
   test -f $x && continue
   echo $x | grep target && continue 
   echo $x | grep ".git" && continue 
+  echo "Updating $x"
   cd $x
   git pull 
   cd -
