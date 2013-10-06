@@ -19,6 +19,7 @@ for x in $DIRS
 do
   test -f $x && continue
   cd $x
+  git pull
   git add .gitignore;git commit -a -m "$comment";git push origin master
   cd -
 done
