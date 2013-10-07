@@ -19,7 +19,9 @@ for x in $DIRS
 do
   test -f $x && continue
   cd $x
+  echo "About to pull in $x"
   git pull
+  echo "About to add all in $x"
   git add .gitignore;git commit -a -m "$comment";git push origin master
   cd -
 done
